@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE19D58F2EB744BF00DC8A47 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19D58E2EB744BF00DC8A47 /* AppetizerListView.swift */; };
+		CE19D5912EB744E500DC8A47 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19D5902EB744E500DC8A47 /* AccountView.swift */; };
+		CE19D5932EB7450500DC8A47 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19D5922EB7450500DC8A47 /* OrderView.swift */; };
+		CE19D5992EB7578E00DC8A47 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19D5982EB7578E00DC8A47 /* Appetizer.swift */; };
+		CE19D59B2EB762A900DC8A47 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19D59A2EB762A900DC8A47 /* AppetizerListCell.swift */; };
 		CE91AE892E9A988A004B970E /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91AE882E9A988A004B970E /* AppetizersApp.swift */; };
-		CE91AE8B2E9A988A004B970E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91AE8A2E9A988A004B970E /* ContentView.swift */; };
+		CE91AE8B2E9A988A004B970E /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91AE8A2E9A988A004B970E /* AppetizerTabView.swift */; };
 		CE91AE8D2E9A988D004B970E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE91AE8C2E9A988D004B970E /* Assets.xcassets */; };
 		CE91AE902E9A988D004B970E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE91AE8F2E9A988D004B970E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE19D58E2EB744BF00DC8A47 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		CE19D5902EB744E500DC8A47 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		CE19D5922EB7450500DC8A47 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		CE19D5982EB7578E00DC8A47 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		CE19D59A2EB762A900DC8A47 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		CE91AE852E9A988A004B970E /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91AE882E9A988A004B970E /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
-		CE91AE8A2E9A988A004B970E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE91AE8A2E9A988A004B970E /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		CE91AE8C2E9A988D004B970E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE91AE8F2E9A988D004B970E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +42,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE19D5942EB7450B00DC8A47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE19D58E2EB744BF00DC8A47 /* AppetizerListView.swift */,
+				CE19D5902EB744E500DC8A47 /* AccountView.swift */,
+				CE19D5922EB7450500DC8A47 /* OrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE19D5952EB7452200DC8A47 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				CE91AE8A2E9A988A004B970E /* AppetizerTabView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		CE19D5962EB7453000DC8A47 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE91AE882E9A988A004B970E /* AppetizersApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE19D5972EB7577D00DC8A47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE19D5982EB7578E00DC8A47 /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CE91AE7C2E9A988A004B970E = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +95,14 @@
 		CE91AE872E9A988A004B970E /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
-				CE91AE882E9A988A004B970E /* AppetizersApp.swift */,
-				CE91AE8A2E9A988A004B970E /* ContentView.swift */,
+				CE19D5972EB7577D00DC8A47 /* Model */,
+				CE19D5962EB7453000DC8A47 /* App */,
+				CE19D5952EB7452200DC8A47 /* Tabbar */,
+				CE19D5942EB7450B00DC8A47 /* Views */,
+				CE91AE962E9C27A1004B970E /* MVVM */,
 				CE91AE8C2E9A988D004B970E /* Assets.xcassets */,
 				CE91AE8E2E9A988D004B970E /* Preview Content */,
+				CE19D59A2EB762A900DC8A47 /* AppetizerListCell.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -65,6 +113,13 @@
 				CE91AE8F2E9A988D004B970E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE91AE962E9C27A1004B970E /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE91AE8B2E9A988A004B970E /* ContentView.swift in Sources */,
+				CE19D5992EB7578E00DC8A47 /* Appetizer.swift in Sources */,
+				CE19D59B2EB762A900DC8A47 /* AppetizerListCell.swift in Sources */,
+				CE19D5912EB744E500DC8A47 /* AccountView.swift in Sources */,
+				CE91AE8B2E9A988A004B970E /* AppetizerTabView.swift in Sources */,
 				CE91AE892E9A988A004B970E /* AppetizersApp.swift in Sources */,
+				CE19D58F2EB744BF00DC8A47 /* AppetizerListView.swift in Sources */,
+				CE19D5932EB7450500DC8A47 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
